@@ -19,3 +19,11 @@ Executable tunctl
   BuildDepends: tuntap
   CompiledObject: native
   Install: false
+
+Executable pingtest
+  Path: test
+  MainIs: pingtest.ml
+  BuildDepends: tuntap, unix, mirage-net, lwt, lwt.syntax
+  CompiledObject: native
+  Install: false
+
